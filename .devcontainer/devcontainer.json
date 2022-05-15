@@ -1,0 +1,9 @@
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../Dockerfile",
+	"extensions": [
+		"JuanBlanco.solidity"
+	],
+	"postCreateCommand": "echo 'Hello Container'"
+}
