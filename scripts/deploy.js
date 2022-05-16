@@ -6,9 +6,7 @@ const main = async () => {
   console.log("Account balance: ", accountBalance.toString());
 
   const contractFactory = await hre.ethers.getContractFactory("CallCounter");
-  const deployedContract = await contractFactory.deploy({
-    value: hre.ethers.utils.parseEther("0.09"),
-  });
+  const deployedContract = await contractFactory.deploy();
   await deployedContract.deployed();
 
 
